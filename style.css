@@ -1,0 +1,121 @@
+/* Fonts and colors */
+body {
+  color: #494949;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: lighter;
+  font-family: 'Lora', serif;
+  margin: 0;
+}
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+h2 {
+  color: #A0A0A0;
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+  color: #4352A1;
+}
+
+/* Custom design */
+.banner {
+  position: relative;
+  z-index:1;
+  background-image: url("https://source.unsplash.com/random/1000x500");
+  background-size: cover;
+  color: white;
+  padding: 120px 0;
+}
+.banner-cover {
+  position: absolute;
+  z-index:2;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.banner h1 {
+  font-size: 38px;
+}
+.banner p {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: lighter;
+  opacity: 0.8;
+}
+.container {
+  position: relative;
+  z-index:3;
+  width: 700px;
+  margin: 50px auto;
+}
+.link-medium {
+  color: #636363;
+  font-weight: lighter;
+  font-size: 25px;
+  font-style: italic;
+}
+.link-medium:hover {
+  transition: background-color 1s ease-out;
+  background-color: rgba(125, 255, 179, 1)
+}
+
+.img-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.written-by {
+  padding: 15px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.written-by .profile-picture {
+  display: table-cell;
+    vertical-align: middle;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+.written-by .profile-content {
+  display: table-cell;
+    vertical-align: middle;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    padding: 20px;
+}
+/* Media queries */
+@media(max-width: 900px) {
+  .container {
+    width: 700px;
+  }
+}
+@media(max-width: 750px) {
+  .container {
+    width: 450px;
+  }
+}
+@media(max-width: 500px) {
+  .container {
+    width: 350px;
+  }
+  .banner {
+    padding: 50px 0;
+  }
+  .banner h1 {
+    font-size: 30px;
+  }
+  .banner p {
+    font-size: 20px;
+  }
+}
